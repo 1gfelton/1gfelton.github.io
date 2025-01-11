@@ -1,0 +1,306 @@
+@charset "UTF-8";
+@font-face {
+  font-display: block;
+  font-family: "CargoDiatypeVariable";
+  src: url("https://static.cargo.site/assets/C3/fonts/diatype-24/CargoDiatypePlusVariable.woff2") format("woff2-variations");
+  font-style: normal;
+  font-weight: 200 1000;
+}
+@font-face {
+  font-display: block;
+  font-family: "CargoDiatypeVariable";
+  src: url("https://static.cargo.site/assets/C3/fonts/diatype-24/CargoDiatypeItalicPlusVariable.woff2") format("woff2-variations");
+  font-style: italic;
+  font-weight: 200 1000;
+}
+html {
+    font-size: 90%;
+}
+body {
+  font-family: "CargoDiatypeVariable", Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: .01em;
+  font-style: normal;
+  color: #000;
+}
+nav {
+    top: 0px;
+    padding: .1em;
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: auto;
+    /*background: rgb(253,253,253);*/
+    overflow: hidden;
+    background: linear-gradient(180deg, rgba(253,253,253,1) 30%, rgba(253,253,253,0) 100%);
+    z-index: 999;
+}
+/* Project Showcase */
+#workContainer {
+    .imgGrid {
+        width: auto;
+        display: grid;
+    }
+}
+/* Top Nav Menu */
+#menuContainer {
+    height: auto;
+    overflow: visible;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    max-width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+    .menuTitle {
+        /*width: auto;*/
+        max-width: 70%;
+        /*display: inline-block;*/
+        flex-shrink: 1;
+    }
+        .menuTitle h1 {
+            display: inline-block;
+            max-width: 100%;
+            font-family: "CargoDiatypeVariable",sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 7vw;
+            line-height: .75;
+            letter-spacing: -0.0125em;
+            padding: 0; margin: 0;
+            text-wrap: nowrap;
+            white-space: nowrap;
+            align-items: flex-end;
+        }
+        .menuTitle.ebc h1 {
+            font-size: 6.75vw;
+        }
+        /* Larger than phablet */
+        @media (max-width: 1224px) {
+            .menuTitle h1 {
+                font-size: auto;
+                max-width: 100%;
+                letter-spacing: -.03em;
+                display: inline-block;
+                align-items: center;
+            }
+        }
+        .outline {
+            color: #fff;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+        .menuItems {
+            margin: 0;
+            /*font-size: 1em;*/
+            /*width: auto;*/
+            /*height: auto;*/
+            display: flex;
+            flex-flow: column nowrap;
+            /*flex-wrap: wrap-reverse;*/
+            justify-content: center;
+            align-items: flex-end;
+        }
+            .menuItems li {
+                font-size: 1.25vw;
+                /*line-height: 1em;*/
+                display: block;
+                /*padding: 0;*/
+                /*margin: 0;*/
+                /*text-align: right;*/
+            }
+#footerContainer {
+    height: auto;
+    overflow: visible;
+    display: flex;
+    flex-flow: row;
+    padding-top: 50px;
+    bottom: 0;
+    justify-content: center; }
+    .footerItems {
+        margin: 0 auto;
+        font-size: 1em;
+        width: 100%;;
+        height: auto;
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap-reverse;
+        justify-content: space-around; }
+    .footerItems li {
+        font-size: 1em;
+        line-height: 1em;
+        display: block;
+        padding: 0;
+        margin: 0;
+        text-align: center; }
+.aboutContainer {
+    height: auto;
+    overflow: visible;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between; }
+    .aboutItems {
+        margin: .125em 0.25em;
+        font-size: 1em;
+        width: 100%;
+        height: auto;
+        display: inline-flex;
+        flex-flow: row;
+        flex-wrap: wrap-reverse;
+        justify-content: space-around; }
+        .aboutItems li {
+            font-size: 1.25vw;
+            line-height: 1em;
+            display: block;
+            padding: 0;
+            margin: 0;
+            text-align: center; }
+a {
+    color: inherit;}
+    a.nodecor {
+        text-decoration: none;
+        font-weight: 500;
+    }
+a:hover {
+    color: #031cfc; }
+    a.nohover:hover {
+        color:#000;
+    }
+a.active {
+    font-style: italic;
+}
+.sneakyLink {
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 750;
+}
+.sneakyLink:hover {
+    background-color: #031cfc;
+    color:white;
+    transition: all .2s ease-in-out;
+}
+.content {
+    padding-top: 0;
+    padding-bottom: 100px;
+    padding-right: 250px;
+    padding-left: 250px;
+    transform: translateY(120px);
+    margin: 0 auto; }
+    #intro {
+        margin-top: 20px;
+    }
+    .content h2 {
+        display: inline-block;
+        max-width: 100%;
+        font-family: "CargoDiatypeVariable",sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 2.5vw;
+        line-height: .75;
+        letter-spacing: -0.0125em;
+        text-align: left;
+        padding-top: 10px; padding-bottom: 20px;
+        margin: 0;
+        text-wrap: nowrap;
+    }
+    .content p {
+        text-align: justify;
+        font-weight: 250; }
+    #projectGrid {
+        display: grid;
+        gap: 1vw;
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        grid-template-rows: auto; }
+        .project {
+            display: grid;
+            aspect-ratio: 1;
+            width: 100%;
+            position: relative;
+            overflow: hidden; }
+
+            .project > * {
+                grid-area: 1 / 1; }
+
+            .project .overlay {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                position: absolute;
+                z-index: 1;
+                pointer-events: none;
+                /*pointer-events: none;*/
+                transition: opacity 0.2s ease; }
+
+                .project:hover .overlay {
+                    opacity: 1;
+                    }
+
+                .project .overlay h2 {
+                    font-size: 1.5vw;
+                    line-height: 1em;
+                    color: #031cfc;
+                    text-align: center;
+                    text-wrap: auto; }
+
+            .project img {
+                transform: scale(1);
+                height: 100%;
+                width: 100%;
+                display: block;
+                transition: all .2s ease;
+                object-fit: cover; }
+
+            .project img:hover {
+                transform: scale(1.05);
+                transition: all .2s ease;
+                filter: blur(10px); }
+
+.coverImage {
+    width: 100%;
+    margin-top: 100px;
+    line-height: 0;
+    text-align: center; }
+    .coverImage img {
+        max-width: 100%;
+        height: auto;
+        max-height: 22em; }
+.projectContainer {
+    font-weight: 250;
+    font-size: 50%;
+    margin: 0 auto;
+    margin-top: 150px;
+    max-width: 50%;
+    /*text-align: justify;*/
+    line-height: 1; }
+.projectContainer h2 {
+    font-size: 5vw;
+    margin-bottom: 0;
+    text-align: center; }
+    .projectText {
+        margin: 0 auto;
+        max-width: 100%;
+        line-height: 1; }
+        .caption {
+            text-align: center; }
+    .previewImage {
+        margin-top: 20px;}
+        .previewImage img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            /*max-height: 22em;*/
+        }
+    .projectContainer p {
+        font-size: 1.2vw;
+        text-align: center; }
