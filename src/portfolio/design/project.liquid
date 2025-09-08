@@ -1,0 +1,30 @@
+---
+layout: base.liquid
+pagination:
+  data: projects.design
+  size: 1
+  alias: project
+permalink: "/portfolio/{{ project.title | slugify }}/"
+eleventyComputed:
+  title: "{{ project.title }}"
+---
+
+<div class="project-detail">
+    <h1>{{ project.title }}</h1>
+
+    {% if project.content %}
+        <div class="project-content">
+            {{ project.content }}
+        </div>
+    {% endif %}
+    
+    {% if project.images %}
+        <div class="project-gallery">
+            {% for image in project.images %}
+                <img src="{{ image }}" alt="{{ project.title }}">
+            {% endfor %}
+        </div>
+    {% endif %}
+    
+    <a href="/portfolio/design/" class="back-link">Back</a>
+</div>
