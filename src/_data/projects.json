@@ -1,7 +1,7 @@
 {
     "technical": [
         {
-            "title": "gSLAM",
+            "title": "gSLAM\n",
             "description": "C++ implementation of EKF-SLAM and GraphSLAM",
             "previewImage": "/img/slam.jpg",
             "images": [
